@@ -23,3 +23,8 @@ Route::post('/getDistrict',[RegistrationController::class,'getDistrict']);
 Route::post('/getUpozilla',[RegistrationController::class,'getUpozilla']);
 //__Registration route__//
 Route::post('/register',[RegistrationController::class,'store'])->name('register');
+
+Route::post('/editemployee/{id}',[RegistrationController::class,'edit'])->name('editemployee');
+Route::post('/update-employee',[RegistrationController::class,'update'])->name('updateemployee');
+
+Route::delete('/delete-employee/{id}',[RegistrationController::class,'destroy'])->name('deleteemployee');
